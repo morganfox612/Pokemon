@@ -14,8 +14,13 @@
  height: 300px;
 }
 
+a {
+  text-decoration: none;
+  color: transparent;
+}
+
 button {
-  color: white;
+  color: transparent;
   border: 30px solid black;
   font-size: 100px;
   text-align: center;
@@ -27,13 +32,16 @@ button {
 .button1 {
     border-radius: 100%;
     margin-left: 38%;
-    margin-top: 15%;
+    margin-top: 14%;
 }
 
-.button1:hover {background-color: white}
+.button1:hover {
+  background-image: url("https://media.giphy.com/media/7OGle9SvMMwAE/giphy.gif");
+  background-size: cover;
+}
 
 .button1:active {
   background-color: white;
-  box-shadow: 0 5px #666;
-  transform: translateY(9px);
+  box-shadow: 0 10px #666;
+  transform: translateY(10px);
 }
