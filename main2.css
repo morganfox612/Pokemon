@@ -3,7 +3,7 @@
 } */
 
 body {
-  background-image: url("https://data.whicdn.com/images/127320878/original.png");
+  background-color: lightblue;
 }
 
 /* input {
@@ -58,12 +58,29 @@ p5 {
 div {
   display: inline-grid;
   grid-gap: 5px;
-  padding-left: 46%;
+  padding-left: 44%;
   padding-top: 8%;
+  padding-bottom: 10%;
 }
 
 img {
   padding-left: 10%;
   width: 200px;
   height: 400px;
+}
+
+button {
+  color: black;
+  border: 5px solid black;
+  font-size: 20px;
+  text-align: center;
+  background-color: grey;
+  height: 85px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#btn {
+  border-radius: 100%;
+  margin-left: 44%;
 }

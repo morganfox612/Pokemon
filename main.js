@@ -1,5 +1,5 @@
-const Pokemon = prompt("Enter a pokemon name")
 requestAPI = () => {
+  const Pokemon = prompt("Enter a pokemon name")
   // var pokemon = prompt("enter pokemon name")
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
@@ -20,11 +20,12 @@ requestAPI = () => {
     xhttp.open("GET", `https://fizal.me/pokeapi/api/v2/name/${Pokemon}.json`, true);
     xhttp.send();
 
+    setTimeout(displayPokemon, 200)
   }
-requestAPI()
+// requestAPI()
 
+let cont = document.createElement('div')
 displayPokemon = () => {
-    let cont = document.createElement('div')
     let h1 = document.createElement('h1')
     let p1 = document.createElement('p1')
     let p2 = document.createElement('p2')
@@ -49,5 +50,3 @@ displayPokemon = () => {
     cont.appendChild(img)
     document.body.appendChild(cont)
 }
-
-setTimeout(displayPokemon, 200)
