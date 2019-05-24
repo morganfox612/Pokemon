@@ -27,6 +27,7 @@ button {
   background-color: white;
   height: 300px;
   display: inline-block;
+  cursor: pointer;
 }
 
 .button1 {
@@ -38,6 +39,7 @@ button {
 .button1:hover {
   background-image: url("https://media1.tenor.com/images/c59e7bfa31590e3f9eb4925639ddeb88/tenor.gif?itemid=7283217");
   background-size: cover;
+  cursor: pointer;
 }
 
 .button1:active {
