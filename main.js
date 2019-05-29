@@ -1,3 +1,22 @@
+function trainerName(){
+let Trainer = prompt("Enter a trainer name")
+class Trainername{
+  constructor(name){
+    this.name = this.trainerName
+    this.trainer = []
+  }
+  get(trained){
+    loadDoc(trained, this.trainer)
+    showdetail(trained)
+  }
+  all(){
+    return this.trainer
+  }
+}
+}
+
+Morgan = new trainerName("Morgan")
+
 requestAPI = () => {
   const Pokemon = prompt("Enter a pokemon name")
     var xhttp = new XMLHttpRequest();
@@ -22,13 +41,13 @@ requestAPI = () => {
   }
 
 let cont = document.createElement('div')
-displayPokemon = () => {
     let h1 = document.createElement('h1')
     let p1 = document.createElement('p1')
     let p2 = document.createElement('p2')
     let p3 = document.createElement('p3')
     let p4 = document.createElement('p4')
     let img = document.createElement('img')
+    displayPokemon = () => {
 
     h1.innerText = pokemon['name']
     p1.innerText = pokemon['defense']
