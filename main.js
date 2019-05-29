@@ -1,21 +1,21 @@
-function trainerName(){
-let Trainer = prompt("Enter a trainer name")
-class Trainername{
-  constructor(name){
-    this.name = this.trainerName
-    this.trainer = []
-  }
-  get(trained){
-    loadDoc(trained, this.trainer)
-    showdetail(trained)
-  }
-  all(){
-    return this.trainer
-  }
-}
-}
-
-Morgan = new trainerName("Morgan")
+// function trainerName(){
+// let Trainer = prompt("Enter a trainer name")
+// class Trainername{
+//   constructor(name){
+//     this.name = this.trainerName
+//     this.trainer = []
+//   }
+//   get(trained){
+//     loadDoc(trained, this.trainer)
+//     showdetail(trained)
+//   }
+//   all(){
+//     return this.trainer
+//   }
+// }
+// }
+//
+// Morgan = new trainerName("Morgan")
 
 requestAPI = () => {
   const Pokemon = prompt("Enter a pokemon name")
@@ -41,7 +41,7 @@ requestAPI = () => {
   }
 
 let cont = document.createElement('div')
-    let h1 = document.createElement('h1')
+    let p = document.createElement('p')
     let p1 = document.createElement('p1')
     let p2 = document.createElement('p2')
     let p3 = document.createElement('p3')
@@ -49,13 +49,13 @@ let cont = document.createElement('div')
     let img = document.createElement('img')
     displayPokemon = () => {
 
-    h1.innerText = pokemon['name']
-    p1.innerText = pokemon['defense']
-    p2.innerText = pokemon['attack']
-    p3.innerText = pokemon['hp']
-    p4.innerText = pokemon['ability']
+    p.innerText = pokemon['name']
+    p1.innerText = 'Defense   ' + pokemon['defense']
+    p2.innerText = 'Attack   ' + pokemon['attack']
+    p3.innerText = 'Hp   ' + pokemon['hp']
+    p4.innerText = 'Ability   ' + pokemon['ability']
     img.setAttribute('src', pokemon['sprite'])
-    cont.appendChild(h1)
+    cont.appendChild(p)
     cont.appendChild(p1)
     cont.appendChild(p2)
     cont.appendChild(p3)
